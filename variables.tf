@@ -20,7 +20,7 @@ variable "security_group" {
 
 variable "tag_name" { 
     description = "Tag Name of for Ec2 instance" 
-    default     = "my-ec2-instance" 
+    default     = "MI" 
 } 
 variable "ami_id" { 
     description = "AMI for Ubuntu Ec2 instance" 
@@ -39,7 +39,7 @@ variable "acl" {
 variable "bucket_prefix" {
     type        = string
     description = "(required since we are not using 'bucket') Creates a unique bucket name beginning with the specified prefix"
-    default     = "my-s3bucket-"
+    default     = "my-s3bucket-mi"
 }
 variable "tags" {
     type        = map
